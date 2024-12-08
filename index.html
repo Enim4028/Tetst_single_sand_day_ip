@@ -15,7 +15,7 @@
         // Funzione per inviare il messaggio
         async function submitMessage(message) {
             try {
-                const response = await fetch('/functions/submit', {
+                const response = await fetch('/functions/submit.js', {
                     method: 'POST',
                     body: JSON.stringify({ message })
                 });
